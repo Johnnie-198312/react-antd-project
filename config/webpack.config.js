@@ -336,7 +336,8 @@ module.exports = function(webpackEnv) {
                 ),
                 
                 plugins: [
-                  ['import',{ libraryName:'antd',style:true }],
+                  ['import',{ libraryName:'antd',style:true },'antd'],
+                  ['import',{ libraryName:'antd-mobile',style:true },'antd-mobile'],
                   [
                     require.resolve('babel-plugin-named-asset-import'),
                     {
